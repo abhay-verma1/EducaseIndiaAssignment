@@ -33,3 +33,39 @@ export const InputField = ({
     </div>
   );
 };
+
+
+export const RadioOption = ({ 
+  name, 
+  options, 
+  selected, 
+  onChange, 
+  label, 
+  required = false 
+}) => {
+  return (
+    <div className="mb-5">
+      <label className="block text-gray-700 text-sm font-medium mb-2">
+        {label}{required && '*'}
+      </label>
+      <div className="flex space-x-4">
+        {options.map(option => (
+          <div key={option} className="flex items-center">
+            <input
+              type="radio"
+              name={name}
+              id={`${name}-${option}`}
+              checked={selected === option}
+              onChange={() => onChange(option)}
+              className="h-4 w-4 text-purple-600 focus:ring-purple-500 border-gray-300"
+              required={required}
+            />
+            <label htmlFor={`${name}-${option}`} className="ml-2 block text-sm text-gray-700">
+              {option}
+            </label>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
