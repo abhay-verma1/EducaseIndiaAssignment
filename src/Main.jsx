@@ -1,7 +1,7 @@
 import PopX from "./pages/PopX";
 import LoginPage from "./pages/LoginPage";
 import ReactDOM from "react-dom/client";
-import Signup from "./pages/SignUp";
+import Signup from "./pages/Signup";
 import AccountSettings from "./pages/AccountSetting";
 import { BrowserRouter as Router, Route, Routes } from "react-router";
 
