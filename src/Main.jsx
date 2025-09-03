@@ -8,7 +8,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router";
 function Main() {
   return (
     <>
-    {/* <LoginPage/> */}
       <Router>
         <Routes>
           <Route path="/login" element={<LoginPage/>}></Route>

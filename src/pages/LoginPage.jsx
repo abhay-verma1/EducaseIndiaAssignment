@@ -25,8 +25,8 @@ function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-xl shadow-lg p-8 max-w-md w-full">
+    <div className="flex items-center justify-center">
+      <div className="bg-white max-w-[340px] border-solid border-[2px] h-[100vh] p-8 w-full">
         <h1 className="text-3xl font-bold text-gray-800 mb-2">Signin to your</h1>
         <h1 className="text-3xl font-bold text-gray-800 mb-6">PopX account</h1>
         
